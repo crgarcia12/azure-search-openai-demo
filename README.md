@@ -36,6 +36,15 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 - [Powershell 7+ (pwsh)](https://github.com/powershell/powershell) - For Windows users only.
    - **Important**: Ensure you can run `pwsh.exe` from a PowerShell command. If this fails, you likely need to upgrade PowerShell.
 
+```
+cd app/backend
+pip install virtualenv
+virtualenv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python -m flask run
+```
+
 >NOTE: Your Azure Account must have `Microsoft.Authorization/roleAssignments/write` permissions, such as [User Access Administrator](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#owner).  
 
 #### To Run in GitHub Codespaces or VS Code Remote Containers

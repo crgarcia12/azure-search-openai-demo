@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Flask",
+            "name": "Python: flask",
             "type": "python",
             "request": "launch",
             "module": "flask",
@@ -48,6 +48,13 @@
                 "build"
             ],
             "console": "integratedTerminal",
+        }
+    ],
+    "compounds": [
+        {
+          "name": "Server/Client",
+          "configurations": ["Python: flask", "Frontend: build"],
+          "stopAll": true
         }
     ],
     "inputs": [
